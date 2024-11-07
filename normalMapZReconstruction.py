@@ -81,7 +81,7 @@ class NormalMapZReconstructionOverride(omr.MHWRender.MPxShadingNodeOverride):
         pass
 
 def initializePlugin(mobject):
-    mplugin = ommpx.MFnPlugin(mobject, "Your Name", "1.0")
+    mplugin = ommpx.MFnPlugin(mobject, "AAA", "1.0")
     try:
         # Register the node
         mplugin.registerNode(
