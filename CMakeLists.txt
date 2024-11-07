@@ -25,7 +25,7 @@ link_directories(
 
 # Create plugin
 add_library(NormalReconstructZ SHARED
-    normalReconstructZ.cpp
+normalReconstructZ_normal.cpp
 )
 
 # Set output name and specific properties for Windows
@@ -47,6 +47,7 @@ target_link_libraries(NormalReconstructZ
     Foundation.lib
     OpenMaya.lib
     OpenMayaUI.lib
+    OpenMayaRender.lib
 )
 
 # Set the output directory to your Maya plugins folder (optional)
