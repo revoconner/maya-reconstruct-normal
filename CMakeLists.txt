@@ -13,7 +13,7 @@ set(MAYA_DEVKIT_LOCATION "C:/Program Files/Autodesk/Maya${MAYA_VERSION}/devkit/d
 # Set the correct extension for Maya plugins
 set(CMAKE_SHARED_LIBRARY_SUFFIX ".mll")
 
-# Include Maya directories - now including devkit paths
+# Include Maya directories
 include_directories(
     ${MAYA_DEVKIT_LOCATION}/include
 )
@@ -50,7 +50,7 @@ target_link_libraries(NormalReconstructZ
     OpenMayaRender.lib
 )
 
-# Set the output directory to your Maya plugins folder (optional)
+# Set the output directory to your Maya plugins folder
 set_target_properties(NormalReconstructZ PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY_RELEASE "${CMAKE_SOURCE_DIR}/plug-ins"
 )
