@@ -288,7 +288,7 @@ static const MString sRegistrantId("normalReconstructZPlugin");
 
 MStatus initializePlugin(MObject obj)
 {
-    MFnPlugin plugin(obj, "Your Name", "1.0", "Any");
+    MFnPlugin plugin(obj, "rev", "1.0", "Any");
 
     const MString UserClassify("texture/2d:drawdb/shader/texture/2d/normalReconstructZ");
     
