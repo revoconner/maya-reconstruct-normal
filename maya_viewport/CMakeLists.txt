@@ -25,7 +25,7 @@ link_directories(
 
 # Create plugin
 add_library(NormalReconstructZ SHARED
-normalReconstructZ_normal.cpp
+    normalReconstructZ.cpp
 )
 
 # Set output name and specific properties for Windows
@@ -50,7 +50,7 @@ target_link_libraries(NormalReconstructZ
     OpenMayaRender.lib
 )
 
-# Set the output directory to your Maya plugins folder
+# Set the output directory
 set_target_properties(NormalReconstructZ PROPERTIES
-    RUNTIME_OUTPUT_DIRECTORY_RELEASE "${CMAKE_SOURCE_DIR}/plug-ins"
+    RUNTIME_OUTPUT_DIRECTORY_RELEASE "${CMAKE_SOURCE_DIR}/output"
 )

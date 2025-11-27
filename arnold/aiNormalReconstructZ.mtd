@@ -1,0 +1,12 @@
+[node normalReconstructZ]
+    desc                    STRING "Reconstructs the Z channel of a normal map from R and G"
+    maya.name               STRING "aiNormalReconstructZ"
+    maya.classification     STRING "shader/utility"
+    maya.id                 INT 0x00070001
+
+[attr input]
+    desc                    STRING "Input normal map color (RG channels used)"
+    maya.name               STRING "input"
+    linkable                BOOL true
+    maya.invisible             BOOL false
+    maya.shortname          STRING "inp"
