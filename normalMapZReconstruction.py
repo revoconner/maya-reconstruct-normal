@@ -65,12 +65,6 @@ class NormalMapZReconstructionOverride(omr.MHWRender.MPxShadingNodeOverride):
             True,             # allow connections
             True              # allow parameter rename
         ))
-        mappings.append(omr.MHWRender.MAttributeParameterMapping(
-            "output",         # parameter name in fragment
-            "outputColor",    # attribute name in Maya node
-            True,            # allow connections
-            True             # allow parameter rename
-        ))
 
     def updateDG(self):
         # Nothing needed for DG update
@@ -105,12 +99,13 @@ def initializePlugin(mobject):
                 <description><![CDATA[Reconstructs normal map Z channel]]></description>
                 <properties>
                     <float3 name="normalMapInput" semantic="Color"/>
-                    <float3 name="output" semantic="Color"/>
                 </properties>
                 <values>
                     <float3 name="normalMapInput" value="0.5,0.5,0.5"/>
-                    <float3 name="output" value="0,0,0"/>
                 </values>
+                <outputs>
+                    <float3 name="output" semantic="Color"/>
+                </outputs>
                 <implementation>
                 <implementation render="OGSRenderer" language="HLSL" lang_version="11.000000">
                     <function_name val="NormalMapZReconstruction" />
