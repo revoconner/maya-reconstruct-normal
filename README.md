@@ -22,7 +22,7 @@ Or copy manually if you have not installed maya in the default intall location.
 ### If you are not on Windows you may have to create your own build files, the scripts should still work.
 
 ## Generative AI use
-I was stuck in this project for the better part of a year, maybe even more. Today I just wanted to go back and fix it, so I asked Claude (Anthropic) to see if it can fix it, branch https://github.com/revoconner/maya-reconstruct-normal/tree/claude/fix-maya-normal-map-013cQdkXaqKKNvk2BEfnSSuh 
+I was stuck in this project for the better part of a year, maybe even more. Today I just wanted to go back and fix it, so I asked Claude (Anthropic) to see if it can fix it, [Closed Unmerged Pull Request](https://github.com/revoconner/maya-reconstruct-normal/pull/1)
 
 That did not work unfortunately so I asked it to just create a research of whatever it found, when I fed it all I had asked in the Autodesk forums last year. That was very helpful, because I got no replies from people in the forum. 
 
